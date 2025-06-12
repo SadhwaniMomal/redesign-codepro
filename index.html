@@ -4,11 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CodePro Software & Web Services</title>
+    <!-- FontAwesome CDN LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
     <!-- Bootstrap CSS CDN  -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- Custom link CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/service.css" />
+    <link rel="stylesheet" href="css/work.css" />
+    <link rel="stylesheet" href="css/choose_us.css" />
+    <link rel="stylesheet" href="css/client_review.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
   </head>
   <body>
     <!--  NAVBAR START HERE  -->
@@ -78,7 +99,10 @@
       class="container-fluid text-center py-5 border border-danger border-2"
     >
       <div class="row mb-4">
-        <h1 class="service-title fw-bold fs-3">Core Services Overview</h1>
+        <h1 id="service-title" class="service-heading fs-6 mb-4">
+          Core Services Overview
+        </h1>
+        <!-- <h1 class="service-title fw-bold fs-4">Core Services Overview</h1> -->
         <p class="service-subtitle text-muted max-w-700 mx-auto mb-5">
           Empower your business with our complete range of software and web
           services — from school systems and POS to SEO and e-commerce.
@@ -86,10 +110,9 @@
           expert-built, scalable solutions.
         </p>
       </div>
-
       <div class="row g-4 justify-content-center">
         <!-- Card 1 -->
-        <div class="col-md-6 col-lg-3">
+        <article class="col-md-6 col-lg-3">
           <div class="service-card h-100">
             <div class="service-icon-wrapper">
               <img
@@ -99,17 +122,17 @@
               />
             </div>
             <h6 class="service-title">School Management System</h6>
-            <p class="service-desc text-muted">
+            <p class="service-desc text-muted py-2">
               Automate admissions, attendance, grades & fees
             </p>
             <a href="#" class="btn service_learn-btn">
               Learn More <i class="bi bi-box-arrow-up-right"></i>
             </a>
           </div>
-        </div>
+        </article>
 
         <!-- Card 2 -->
-        <div class="col-md-6 col-lg-3">
+        <article class="col-md-6 col-lg-3">
           <div class="service-card h-100">
             <div class="service-icon-wrapper">
               <img
@@ -126,10 +149,10 @@
               Learn More <i class="bi bi-box-arrow-up-right"></i>
             </a>
           </div>
-        </div>
+        </article>
 
         <!-- Card 3 -->
-        <div class="col-md-6 col-lg-3">
+        <article class="col-md-6 col-lg-3">
           <div class="service-card h-100">
             <div class="service-icon-wrapper">
               <img
@@ -146,10 +169,10 @@
               Learn More <i class="bi bi-box-arrow-up-right"></i>
             </a>
           </div>
-        </div>
+        </article>
 
         <!-- Card 4 -->
-        <div class="col-md-6 col-lg-3">
+        <article class="col-md-6 col-lg-3">
           <div class="service-card h-100">
             <div class="service-icon-wrapper">
               <img
@@ -166,10 +189,10 @@
               Learn More <i class="bi bi-box-arrow-up-right"></i>
             </a>
           </div>
-        </div>
+        </article>
 
         <!-- Card 5 -->
-        <div class="col-md-6 col-lg-3">
+        <article class="col-md-6 col-lg-3">
           <div class="service-card h-100">
             <div class="service-icon-wrapper">
               <img
@@ -186,10 +209,10 @@
               Learn More <i class="bi bi-box-arrow-up-right"></i>
             </a>
           </div>
-        </div>
+        </article>
 
         <!-- Card 6 -->
-        <div class="col-md-6 col-lg-3">
+        <article class="col-md-6 col-lg-3">
           <div class="service-card h-100">
             <div class="service-icon-wrapper">
               <img
@@ -206,10 +229,10 @@
               Learn More <i class="bi bi-box-arrow-up-right"></i>
             </a>
           </div>
-        </div>
+        </article>
 
         <!-- Card 7 -->
-        <div class="col-md-6 col-lg-3">
+        <article class="col-md-6 col-lg-3">
           <div class="service-card h-100">
             <div class="service-icon-wrapper">
               <img
@@ -226,19 +249,527 @@
               Learn More <i class="bi bi-box-arrow-up-right"></i>
             </a>
           </div>
-        </div>
+        </article>
       </div>
 
       <div>
-        <button class="service_explore-btn mt-4">Explore All Services</button>
+        <a href="#" class="btn service_explore-btn mt-4"
+          >Explore All Services</a
+        >
       </div>
     </section>
 
     <!--  How We Work START HERE -->
-    <!--  Why Choose CodePro START HERE-->
+    <section
+      class="container py-5 px-5 border border-danger"
+      aria-labelledby="work-title"
+    >
+      <!-- Section Header -->
+      <div class="text-center mb-4">
+        <span id="work-title" class="work-title">How We Work</span>
+        <p class="mt-3 text-muted">
+          From idea to execution, our streamlined process ensures clarity,
+          quality, and growth every step of the way.
+        </p>
+      </div>
+
+      <div class="row justify-content-center align-items-center mb-4">
+        <!-- Step 1: Consultation & Discovery -->
+        <article class="col-md-6 mb-lg-0 mb-4">
+          <div class="step-box">
+            <div class="icon-heading d-flex align-items-center mb-2">
+              <figure class="mb-0 me-2">
+                <img
+                  src="./image/work/consultation.svg"
+                  alt="Consultation icon"
+                  class="step-icon"
+                />
+              </figure>
+              <h3 class="step-title h6 mb-0">Consultation & Discovery</h3>
+            </div>
+            <p class="text-muted">
+              We begin by understanding your goals, challenges, and vision to
+              align our solutions with your needs.
+            </p>
+          </div>
+        </article>
+
+        <!-- Arrow Between Step 1 & 2 (Desktop Only) -->
+        <div class="col-md-6 text-center d-none d-lg-flex">
+          <img
+            src="image/work/zig-1.png"
+            alt="Zigzag arrow"
+            class="zigzag-arrow"
+          />
+        </div>
+
+        <!-- Arrow Between Step 1 & 2 (Mobile Only - Rotated Right Arrow) -->
+        <div class="col-12 d-flex d-lg-none justify-content-center my-2">
+          <img
+            src="image/work/right.svg"
+            alt="Zigzag arrow"
+            class="zigzag-arrow rotate-down"
+          />
+        </div>
+
+        <!-- Arrow for Mid-Screen (Tablet only - optional second arrow) -->
+        <div class="col-md-6 text-center d-none d-md-block">
+          <img
+            src="image/work/zig-2.png"
+            alt="Zigzag arrow"
+            class="zigzag-arrow d-lg-flex d-none"
+          />
+        </div>
+
+        <!-- Step 2: Planning & Wireframes -->
+        <article class="col-md-6 mb-lg-0 mb-4">
+          <div class="step-box">
+            <div class="icon-heading d-flex align-items-center mb-2">
+              <figure class="mb-0 me-2">
+                <img
+                  src="./image/work/planner.svg"
+                  alt="Planning icon"
+                  class="step-icon"
+                />
+              </figure>
+              <h3 class="step-title h6 mb-0">Planning & Wireframes</h3>
+            </div>
+            <p class="text-muted">
+              Strategic planning and wireframing lay the foundation for a
+              user-centered experience and smooth workflow.
+            </p>
+          </div>
+        </article>
+
+        <!-- Arrow Between Step 2 & 3 (Mobile Only) -->
+        <div class="col-12 d-flex d-lg-none justify-content-center my-2">
+          <img
+            src="image/work/right.svg"
+            alt="Zigzag arrow"
+            class="zigzag-arrow rotate-down"
+          />
+        </div>
+
+        <!-- Step 3: Design & Prototyping -->
+        <article class="col-md-6 mb-lg-0 mb-4">
+          <div class="step-box">
+            <div class="icon-heading d-flex align-items-center mb-2">
+              <figure class="mb-0 me-2">
+                <img
+                  src="./image/work/design-thinking_2857569.svg"
+                  alt="Design icon"
+                  class="step-icon"
+                />
+              </figure>
+              <h3 class="step-title h6 mb-0">Design & Prototyping</h3>
+            </div>
+            <p class="text-muted">
+              Visual creativity meets usability—turning wireframes into
+              interactive, client-approved prototypes.
+            </p>
+          </div>
+        </article>
+
+        <!-- Arrow Between Step 3 & 4 (Mobile Only) -->
+        <div class="col-12 d-flex d-lg-none justify-content-center my-2">
+          <img
+            src="image/work/right.svg"
+            alt="Zigzag arrow"
+            class="zigzag-arrow rotate-down"
+          />
+        </div>
+
+        <!-- Arrow Between Step 3 & 4 (Desktop/Tablet) -->
+        <div class="col-md-6 text-center d-none d-md-block">
+          <img
+            src="./image/work/zig-1.png"
+            alt="Zigzag arrow"
+            class="zigzag-arrow"
+          />
+        </div>
+
+        <!-- Arrow Between Step 3 & 4 (Extra Arrow for layout) -->
+        <div class="col-md-6 text-center d-none d-md-block">
+          <img
+            src="image/work/zig-2.png"
+            alt="Zigzag arrow"
+            class="zigzag-arrow d-lg-flex d-none"
+          />
+        </div>
+
+        <!-- Step 4: Development & Testing -->
+        <article class="col-md-6 mb-lg-0 mb-4">
+          <div class="step-box">
+            <div class="icon-heading d-flex align-items-center mb-2">
+              <figure class="mb-0 me-2">
+                <img
+                  src="./image/work/configuration_8894709.svg"
+                  alt="Development icon"
+                  class="step-icon"
+                />
+              </figure>
+              <h3 class="step-title h6 mb-0">Development & Testing</h3>
+            </div>
+            <p class="text-muted">
+              Robust development paired with rigorous testing ensures
+              functionality across all devices and platforms.
+            </p>
+          </div>
+        </article>
+
+        <!-- Arrow Between Step 4 & 5 (Mobile Only) -->
+        <div class="col-12 d-flex d-lg-none justify-content-center my-2">
+          <img
+            src="image/work/right.svg"
+            alt="Zigzag arrow"
+            class="zigzag-arrow rotate-down"
+          />
+        </div>
+
+        <!-- Step 5: Deployment & Training -->
+        <article class="col-md-6 mb-lg-0 mb-4">
+          <div class="step-box">
+            <div class="icon-heading d-flex align-items-center mb-2">
+              <figure class="mb-0 me-2">
+                <img
+                  src="./image/work/internet_2861420.svg"
+                  alt="Deployment icon"
+                  class="step-icon"
+                />
+              </figure>
+              <h3 class="step-title h6 mb-0">Deployment & Training</h3>
+            </div>
+            <p class="text-muted">
+              Your project goes live—backed by team training and guidance to
+              ensure a confident launch.
+            </p>
+          </div>
+        </article>
+
+        <!-- Arrow Between Step 5 & 6 (Mobile Only) -->
+        <div class="col-12 d-flex d-lg-none justify-content-center my-2">
+          <img
+            src="image/work/right.svg"
+            alt="Zigzag arrow"
+            class="zigzag-arrow rotate-down"
+          />
+        </div>
+
+        <!-- Arrow Before Final Step (Desktop/Tablet) -->
+        <div class="col-md-6 text-center d-none d-md-block">
+          <img
+            src="./image/work/zig-1.png"
+            alt="Zigzag arrow"
+            class="zigzag-arrow"
+          />
+        </div>
+
+        <!-- Step 6: Ongoing Support & Growth -->
+        <article class="col-md-6 mb-lg-0 mb-4 order-lg-last">
+          <div class="step-box">
+            <div class="icon-heading d-flex align-items-center mb-2">
+              <figure class="mb-0 me-2">
+                <img
+                  src="./image/work/collaboration_18239350.svg"
+                  alt="Support icon"
+                  class="step-icon"
+                />
+              </figure>
+              <h3 class="step-title h6 mb-0">Ongoing Support & Growth</h3>
+            </div>
+            <p class="text-muted">
+              Post-launch, we stay with you—offering updates, improvements, and
+              growth support for long-term success.
+            </p>
+          </div>
+        </article>
+
+        <!-- CTA Button: Our Process -->
+        <nav class="col-md-6 text-center">
+          <a
+            href="#"
+            class="btn text-decoration-none process-btn px-3 py-2 fs-5"
+          >
+            Our Process <i class="fa-solid fa-arrow-right text-white px-1"></i>
+          </a>
+        </nav>
+      </div>
+    </section>
+
     <!--  Portfolio Highlights START HERE  -->
+    <section class="container text-center py-5 border border-danger border-2">
+      <div class="row mb-4">
+        <h1 id="portfolio-title" class="portfolio-heading fs-6 mb-4">
+          Portfolio Highlights
+        </h1>
+        <p class="portfolio-subtitle text-muted">
+          Explore our featured projects that solve real-world problems across
+          industries.<br />
+          From school systems to e-commerce, each case reflects our commitment
+          to excellence.
+        </p>
+      </div>
+
+      <div class="portfolio-slider-container position-relative">
+        <div class="portfolio-slider-wrapper mx-auto" id="portfolioSliderItems">
+          <!-- Slide 1 -->
+          <div class="portfolio-slide-card">
+            <a href="project1.html" class="portfolio-slide-link">
+              <img
+                src="image/portfolio/bussinessTheme_mockup.png"
+                alt="Slide 1"
+              />
+              <div class="portfolio-slide-overlay">
+                <i class="fas fa-eye"></i>
+              </div>
+            </a>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="portfolio-slide-card">
+            <a href="project2.html" class="portfolio-slide-link">
+              <img
+                src="image/portfolio/codepro_mockup_2(NGO Website).png"
+                alt="Slide 2"
+              />
+              <div class="portfolio-slide-overlay">
+                <i class="fas fa-eye"></i>
+              </div>
+            </a>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="portfolio-slide-card">
+            <a href="project3.html" class="portfolio-slide-link">
+              <img
+                src="image/portfolio/dentist-theme-mockup.png"
+                alt="Slide 3"
+              />
+              <div class="portfolio-slide-overlay">
+                <i class="fas fa-eye"></i>
+              </div>
+            </a>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="portfolio-slide-card">
+            <a href="project4.html" class="portfolio-slide-link">
+              <img
+                src="image/portfolio/theme_mockup_one.(update)png.png"
+                alt="Slide 4"
+              />
+              <div class="portfolio-slide-overlay">
+                <i class="fas fa-eye"></i>
+              </div>
+            </a>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="portfolio-slide-card">
+            <a href="project5.html" class="portfolio-slide-link">
+              <img src="image/portfolio/web_mockup_01.png" alt="Slide 5" />
+              <div class="portfolio-slide-overlay">
+                <i class="fas fa-eye"></i>
+              </div>
+            </a>
+          </div>
+
+          <!-- Slide 6 -->
+          <div class="portfolio-slide-card">
+            <a href="project6.html" class="portfolio-slide-link">
+              <img src="image/portfolio/web_mockup_01.png" alt="Slide 6" />
+              <div class="portfolio-slide-overlay">
+                <i class="fas fa-eye"></i>
+              </div>
+            </a>
+          </div>
+
+          <!-- Slide 7 -->
+          <div class="portfolio-slide-card">
+            <a href="project7.html" class="portfolio-slide-link">
+              <img src="image/portfolio/website_mockup19.png" alt="Slide 7" />
+              <div class="portfolio-slide-overlay">
+                <i class="fas fa-eye"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dots -->
+      <div class="portfolio-slider-nav mt-4">
+        <span
+          class="portfolio-slider-dot active"
+          onclick="goToPortfolioSlide(0)"
+        ></span>
+        <span
+          class="portfolio-slider-dot"
+          onclick="goToPortfolioSlide(1)"
+        ></span>
+        <span
+          class="portfolio-slider-dot"
+          onclick="goToPortfolioSlide(2)"
+        ></span>
+        <span
+          class="portfolio-slider-dot"
+          onclick="goToPortfolioSlide(3)"
+        ></span>
+        <span
+          class="portfolio-slider-dot"
+          onclick="goToPortfolioSlide(4)"
+        ></span>
+        <span
+          class="portfolio-slider-dot"
+          onclick="goToPortfolioSlide(5)"
+        ></span>
+      </div>
+    </section>
+
+    <!--  Why Choose CodePro START HERE-->
+    <section class="container text-center py-5 bg-white border border-danger">
+      <h1 class="choose-title fw-semibold mb-2 fs-6">Why Choose Us</h1>
+      <h2 class="fw-bold mb-3">CodePro Delivers What Others Promise</h2>
+      <p class="text-muted mx-auto" style="max-width: 700px">
+        CodePro delivers secure, scalable solutions with rapid delivery and 24/7
+        expert support. Trusted by 50+ clients, we drive real growth through
+        innovation and proven SEO results.
+      </p>
+
+      <hr class="my-5" />
+
+      <div class="row g-4 justify-content-lg-center justify-content-around">
+        <article class="col-4 mb-4 col-md-4 col-lg-2 text-center">
+          <img
+            src="./image/choose/guarantee.svg"
+            alt="Secure"
+            class="mb-3 icon-img"
+          />
+          <p class="small fw-semibold mb-0">
+            100% Secure & Scalable<br />solutions
+          </p>
+        </article>
+        <article class="col-4 mb-4 col-md-4 col-lg-2 text-center">
+          <img
+            src="./image/choose/speed.svg"
+            alt="Agile"
+            class="mb-3 icon-img"
+          />
+          <p class="small fw-semibold mb-0">
+            Rapid Delivery with Agile<br />methodology
+          </p>
+        </article>
+        <article class="col-4 mb-4 col-md-4 col-lg-2 text-center">
+          <img
+            src="./image/choose/appreciation.svg"
+            alt="Clients"
+            class="mb-3 icon-img"
+          />
+          <p class="small fw-semibold mb-0">
+            50+ Happy Clients<br />across industries
+          </p>
+        </article>
+        <article class="col-4 mb-4 col-md-4 col-lg-2 text-center">
+          <img
+            src="./image/choose/costumer-service.svg"
+            alt="Support"
+            class="mb-3 icon-img"
+          />
+          <p class="small fw-semibold mb-0">
+            24/7 Support & free<br />consultations
+          </p>
+        </article>
+        <article class="col-4 mb-4 col-md-4 col-lg-2 text-center">
+          <img
+            src="./image/choose/enrichment.svg"
+            alt="SEO"
+            class="mb-3 icon-img"
+          />
+          <p class="small fw-semibold mb-0">
+            Proven SEO Results<br />boosting traffic & sales
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!--  Client Highlights START HERE  -->
+    <!-- Client Success Section -->
+    <section class="container text-center py-5 border border-danger">
+      <div>
+        <h2 class="fw-bold mb-2">
+          Client Success, Powered by<br />
+          CodePro
+        </h2>
+        <p class="text-muted mb-5">
+          Real businesses. Real results. See what our clients have to say about
+          working with CodePro.
+        </p>
+      </div>
+
+      <!-- Owl Carousel -->
+      <div class="owl-carousel owl-theme">
+        <!-- Card 1 -->
+        <article class="item bg-light rounded">
+          <div class="p-4 client_card text-start h-100">
+            <p class="fw-semibold mb-4">
+              Take authentic feedbacks from customers of your app.
+              <span class="client_highlight">Build a quick list.</span>
+            </p>
+            <figure>
+              <img
+                src="./image/client-review/Image.png"
+                alt="Customer feedback"
+                class="img-fluid client_card-img"
+              />
+            </figure>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="item bg-light rounded">
+          <div class="p-4 client_card text-start h-100">
+            <p class="fw-semibold mb-4">
+              <span class="client_highlight">Make quick fixes based</span> on
+              the feedbacks you’ve received. With a happy smile.
+            </p>
+            <figure>
+              <img
+                src="./image/client-review/Image.png"
+                alt="Fixing feedback"
+                class="img-fluid client_card-img"
+              />
+            </figure>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="item bg-light rounded">
+          <div class="p-4 client_card text-start h-100">
+            <p class="fw-semibold mb-4">
+              Enjoy more than 10x revenue with real-time
+              <span class="client_highlight"
+                >conversions. Grow your business.</span
+              >
+            </p>
+            <figure>
+              <img
+                src="./image/client-review/Image.png"
+                alt="Business growth"
+                class="img-fluid client_card-img"
+              />
+            </figure>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <!--  Newsletter Signup & FOOTER START HERE -->
     <!-- Bootstrap Js CDN -->
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- CUSTOM JS LINK -->
+    <script src="./js/client_review.js"></script>
+    <script src="./js/portfolio.js"></script>
   </body>
 </html>

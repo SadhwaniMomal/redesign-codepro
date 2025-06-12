@@ -12,11 +12,12 @@
 /* ====== Here Color Varaibles =========== */
 
 :root {
-  --primary-color: #6a5acd;
-  --secondary-color: #141d38;
-  --black-color: #0000;
-  --white-color: #ffffff;
-  --dropdown-hover-color: #f1f9ff;
-  --icon-bg: #f5f4fc;
-  --primary-light: #c6b9f2;
+  --primary-color: #6a5acd; /* SlateBlue */
+  --secondary-color: #141d38; /* Deep Navy */
+  --black-color: #000000; /* Correct black (was #0000, which is transparent!) */
+  --white-color: #ffffff; /* White */
+  --dropdown-hover-color: #f1f9ff; /* Very light blue */
+  --icon-bg: #f5f4fc; /* Light lavender */
+  --primary-light: #c6b9f2; /* Light SlateBlue */
+  --background: #f1efff; /* Off-white lavender */
 }

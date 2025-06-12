@@ -5,12 +5,27 @@
   text-align: center;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease-in-out;
-  height: 100%;
+  /* height: 100%; */
+}
+.service-title {
+  color: var(--primary-color);
 }
 .service-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
 }
+
+.service-heading {
+  background: var(--background);
+  color: var(--primary-color);
+  font-weight: 600;
+  padding: 6px 18px;
+  border-radius: 30px;
+  display: inline-block;
+  width: fit-content;
+  margin: auto;
+}
+
 .service-icon-wrapper {
   width: 80px;
   height: 80px;
@@ -31,9 +46,6 @@
   height: 40px;
 }
 
-.service-desc {
-  margin: 10px 0 20px;
-}
 .service_learn-btn {
   background-color: var(--primary-light);
   color: var(--white-color);

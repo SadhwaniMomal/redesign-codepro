@@ -1,0 +1,17 @@
+.client_card-light {
+  background-color: #f5f9ff;
+  border-radius: 1rem;
+}
+
+.client_highlight {
+  background-color: #d6e7ff;
+}
+
+.client_card-img {
+  border-radius: 0.75rem;
+}
+
+/* Owl Carousel center spacing */
+.owl-carousel .item {
+  padding: 15px;
+}
